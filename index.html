@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetes para Niños</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <h1>Bienvenido a nuestra página WEB</h1>
+    <p>Aquí puedes comprar la casa de juguete ideal para tu niño/a.</p>
+    <div id="nombreSection">
+        <p>Ingresa tu nombre:</p>
+        <input type="text" id="nombreInput">
+        <button id="nombreBtn">Continuar</button>
+        <div id="nombreError" style="color: red;"></div>
+    </div>
+    
+    <div id="edadSection" style="display: none;">
+        <p>Por favor, ingresa la edad del niño:</p>
+        <input type="number" id="edadInput">
+        <button id="edadBtn">Continuar</button>
+        <div id="edadError" style="color: red;"></div>
+    </div>
+
+    <div id="direccionSection" style="display: none;">
+        <p>Ingresa tu dirección:</p>
+        <input type="text" id="direccionInput">
+        <button id="direccionBtn">Continuar</button>
+        <div id="direccionError" style="color: red;"></div>
+    </div>
+
+    <div id="telefonoSection" style="display: none;">
+        <p>Ingresa tu número de teléfono:</p>
+        <input type="text" id="telefonoInput">
+        <button id="telefonoBtn">Continuar</button>
+        <div id="telefonoError" style="color: red;"></div>
+    </div>
+
+    <div id="productosSection" style="display: none;">
+        <p>Elige el producto que deseas comprar:</p>
+        <select id="productoSelect">
+            <option value="Casa grande">Casa grande</option>
+            <option value="Casa mediana">Casa mediana</option>
+            <option value="Casa pequeña">Casa pequeña</option>
+            <option value="Pack juguetes">Pack juguetes</option>
+        </select>
+        <button id="productoBtn">Consultar</button>
+        <div id="productoError" style="color: red;"></div>
+        <div id="productoPrecio" style="display: none;"></div>
+    </div>
+
+    <div id="resultado" style="display: none;">
+        <h2>Detalles del Producto</h2>
+        <div id="productoInfo"></div>
+        <button id="comprarBtn">Comprar</button>
+        <button id="continuarComprandoBtn">Continuar Comprando</button>
+    </div>
+
+    <div id="compraSection" style="display: none;">
+        <h2>Resumen de la Compra</h2>
+        <div id="comprasInfo"></div>
+        <h3>Total Gastado: <span id="totalGasto"></span></h3>
+        <h2>Datos del Comprador</h2>
+        <div id="datosComprador">
+            <p>Nombre: <span id="nombreComprador"></span></p>
+            <p>Dirección: <span id="direccionComprador"></span></p>
+            <p>Teléfono: <span id="telefonoComprador"></span></p>
+        </div>
+    </div>
+
+    <div id="historialCompras" style="display: none;">
+        <h2>Historial de Compras</h2>
+        <div id="comprasHistorial"></div>
+    </div>
+
+    <div id="comprasProductosFrecuentes">
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="./productosFrecuentes.json"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+    "productosFrecuentes": [
+        {
+            "nombrejuguete": "Casa grande",
+            "precio": 5000
+        },
+        {
+            "nombrejuguete": "Casa mediana",
+            "precio": 3500
+        },
+        {
+            "nombrejuguete": "Casa pequeña",
+            "precio": 2500
+        },
+        {
+            "nombrejuguete": "Pack juguetes",
+            "precio": 500
+        }
+
+    ]
+}
